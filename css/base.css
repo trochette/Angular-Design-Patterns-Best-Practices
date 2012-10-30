@@ -1,0 +1,322 @@
+/***************************************************
+	Generic styles
+***************************************************/
+html, body{
+	width:100%;
+	height:100%;
+	font-family:'Open Sans', sans-serif;
+	min-width: 1024px;
+	min-height: 700px;
+}
+
+
+body{	
+	background: #ffffff;
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZGFkOWQ5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #dad9d9 100%); 
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(100%,#dad9d9)); 
+	background: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%,#dad9d9 100%); 
+	background: -o-radial-gradient(center, ellipse cover, #ffffff 0%,#dad9d9 100%);
+	background: -ms-radial-gradient(center, ellipse cover, #ffffff 0%,#dad9d9 100%); 
+	background: radial-gradient(ellipse at center, #ffffff 0%,#dad9d9 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dad9d9',GradientType=1 );
+}
+
+
+h1{
+	font-size: 40px;
+	font-weight: 300;
+}
+
+h2{
+	font-size: 20px;
+	font-weight: 300;
+}
+
+h3{
+	font-size: 15px;
+	font-weight: 300;
+	color:#dd1b16;
+}
+
+a,a:hover{
+	color:#333;
+}
+
+.section{
+	font-size: 17px;
+	float: left;
+	text-align: left;
+	margin:20px 0px 0px 70px;
+
+}
+
+pre{
+	text-align: left;
+	margin:0 70px;
+	
+	font-size: 16px;
+}
+
+pre code{
+	overflow: scroll;
+	background: #2D2D2D;
+	color:#CCC;
+	padding: 20px;
+	height:450px;
+	white-space: pre-line;
+}
+
+.indent{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.credits{
+	font-size: 15px;
+	text-align: left;
+	float: left;
+	margin:20px 0px 0px 70px;
+}
+
+.view{
+	position: absolute;
+    width: 100%;
+    min-width: 1024px;
+    top: 50%;
+    z-index: 1;
+
+    text-align: center;
+
+    -webkit-transition: -webkit-perspective .4s ease;
+       -moz-transition: -moz-perspective .4s ease;
+        -ms-transition: -ms-perspective .4s ease;
+         -o-transition: -o-perspective .4s ease;
+            transition: perspective .4s ease;
+
+    -webkit-perspective: 600px;
+       -moz-perspective: 600px;
+        -ms-perspective: 600px;
+            perspective: 600px;
+
+    -webkit-perspective-origin: 50% 50%;
+       -moz-perspective-origin: 50% 50%;
+        -ms-perspective-origin: 50% 50%;
+            perspective-origin: 50% 50%;
+}
+
+
+.slide{
+	display: block;
+	position:absolute;
+	width:100%;
+	height:700px;
+	left:50%;
+	top:50%;
+	margin: -350px 0px 0px -50%;
+	text-align: center;
+}
+
+.slide.transition{
+	-webkit-transform-style: preserve-3d;
+	   -moz-transform-style: preserve-3d;
+		-ms-transform-style: preserve-3d;
+			transform-style: preserve-3d;
+
+	-webkit-transition: all 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+	   -moz-transition: all 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+	    -ms-transition: all 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+	     -o-transition: all 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+	        transition: all 800ms cubic-bezier(0.260, 0.860, 0.440, 0.985);
+}
+
+
+.slide.past{
+    opacity: 0;
+
+    -webkit-transform: translate3d(-25%, 0, 0) rotateY(-65deg) translate3d(-25%, 0, 0);
+       -moz-transform: translate3d(-25%, 0, 0) rotateY(-65deg) translate3d(-25%, 0, 0);
+        -ms-transform: translate3d(-25%, 0, 0) rotateY(-65deg) translate3d(-25%, 0, 0);
+            transform: translate3d(-25%, 0, 0) rotateY(-65deg) translate3d(-25%, 0, 0);
+}
+
+
+.slide.present {
+	z-index: 11;
+	opacity: 1;
+}
+
+
+.slide.future{
+    opacity: 0;
+
+    -webkit-transform: translate3d(25%, 0, 0) rotateY(65deg) translate3d(25%, 0, 0);
+       -moz-transform: translate3d(25%, 0, 0) rotateY(65deg) translate3d(25%, 0, 0);
+        -ms-transform: translate3d(25%, 0, 0) rotateY(65deg) translate3d(25%, 0, 0);
+            transform: translate3d(25%, 0, 0) rotateY(65deg) translate3d(25%, 0, 0);
+}
+
+/***************************************************
+	Navigation 
+***************************************************/
+.navigation{
+	position:absolute;
+	z-index: 100;
+	bottom:-60px;
+	left:50%;
+	width:900px;
+	padding:15px;
+	margin-left: -465px;
+	background:rgba(201,201,201,.3);
+	text-align: center;
+
+	-webkit-transition: bottom .4s ease;
+       -moz-transition: bottom .4s ease;
+        -ms-transition: bottom .4s ease;
+         -o-transition: bottom .4s ease;
+            transition: bottom .4s ease;
+}
+
+body:hover .navigation{
+	bottom:0px;
+}
+
+.navigation *{
+	opacity: .4;
+	font-size: 18px;
+}
+
+.navigation a{
+	margin-top: 5px;
+}
+
+.navigation a:nth-child(1){
+	float:left;
+}
+.navigation a:nth-child(3){
+	float:right;
+}
+
+/***************************************************
+	Slide 1
+***************************************************/
+.note1 img{
+	margin:150px 0px 60px;
+}
+.note1 div{
+	margin-top:10px;
+	opacity: .5;
+}
+
+
+.note1 .icon-github-sign{
+	width:25px;
+	height:25px;
+	background:url(../img/github.png) no-repeat;
+}
+
+.note1 .btn-large{
+	margin-top: 200px;
+	font-size: 20px;
+}
+
+/***************************************************
+	Slide 2
+***************************************************/
+.note2 h1{
+	margin-top: 270px;
+}
+
+.note2 h2{
+	margin-top: 70px;
+}
+
+/***************************************************
+	Slide 3 || Slide 4
+***************************************************/
+.note3 h1{
+	margin-top: 270px;
+}
+
+.note3 h2{
+	position: absolute;
+	left:50%;
+	margin: 10px 0px 0px -130px;
+	text-align: right;
+}
+
+/***************************************************
+	Slide 5
+***************************************************/
+.note5 h1{
+	margin:50px 0px 20px 70px;
+	margin-top: 50px;
+	text-align: left;
+}
+
+.note5 h2{
+	margin-top: 10px;
+	margin-right:200px;
+	text-align: right;
+}
+
+/***************************************************
+	Slide 7
+***************************************************/
+.note7 h1{
+	margin-top: 270px;
+}
+
+.note7 h2{
+	margin-top: 30px;
+}
+/***************************************************
+	Slide 8
+***************************************************/
+.note8 h1{
+	margin-top: 270px;
+}
+
+.note8 h2{
+	position: absolute;
+	left:50%;
+	width: 100%;
+	margin: 10px 0px 0px -310px;
+	text-align: left;
+}
+
+/***************************************************
+	Slide 10
+***************************************************/
+.note10 h1{
+	margin-top: 270px;
+}
+
+.note10 h2{
+	margin-top:50px;
+	text-align: center;
+}
+
+/***************************************************
+	Slide 17
+***************************************************/
+.note17 h1{
+	margin-top: 170px;
+}
+
+.note17 h2{
+	margin-top: 70px;
+}
+
+.note17 h3{
+	margin-top: 15px;
+	font-size: 15px;
+	font-weight: 300;
+	color:#333;
+}
+
+.note17 img{
+	margin-top: 100px;
+}
+
+

@@ -1,0 +1,54 @@
+<div class="slide note5">
+	<span class="section">Tip #5 : Implement a notification system to solve problems</span>
+	<h1>How to use Notifications</h1>
+	<pre class="highlightjs">
+		<code>
+	//Using Notifications Require the injection of Notifications class.
+	var NotesController = BaseController.extend({
+		init:function($scope,NotesModel,Notifications,$route){
+			this._notifications = Notifications;
+			this._notesModel = NotesModel;
+			this._super($scope)
+			this._notesModel.loadSlides();
+		},
+
+		defineListeners:function(){
+			this._super();
+			//Add event listeners on Notifications as you usually do on other objects
+			this._notifications.addEventListener(notes.slide.events.TRANSITION_END,...);
+			this._notifications.addEventListener(ui.navigation.events.PREVIOUS,...);
+			this._notifications.addEventListener(ui.navigation.events.NEXT,...);
+		},
+
+		[...]
+	})
+
+	NotesController.$inject = ['$scope','NotesModel','Notifications','$route'];
+
+
+
+
+
+
+	//Inject Notifications in another object and start messaging
+	var SlideDirective = BaseController.extend({
+		[...]
+
+		_handleTransitionEnd:function(event){
+			[...]
+
+			//Use Notifications.notify to notify listeners waiting for that event.
+			this._notifications.notify(notes.slide.events.TRANSITION_END);
+		}
+	})
+
+
+
+
+
+
+
+</code>
+	</pre>
+	<span class="credits">A basic notifications class is included in the source code</span>
+</div>
