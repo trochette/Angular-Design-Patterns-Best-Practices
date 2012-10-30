@@ -10,7 +10,7 @@
  */
 var NoteService = Class.extend({
 
-	LOAD_SLIDES_URL:'/mocks/slides.json',
+	LOAD_SLIDES_URL:'mocks/slides.json',
 
 	/**
 	 * Query server and returns us slideshow
