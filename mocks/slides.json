@@ -4,96 +4,96 @@
 	"slides":[
 		{
 			"path":"/intro",
-			"templateUrl":"/partials/slide1.html",
+			"templateUrl":"partials/slide1.html",
 			"controller":"SlideController"
 		},
 		{
 			"path":"/are_they_tested",
-			"templateUrl":"/partials/slide2.html",
+			"templateUrl":"partials/slide2.html",
 			"controller":"SlideController"
 		},
 
 		{
 			"path":"/keep_controllers_simple",
-			"templateUrl":"/partials/slide3.html",
+			"templateUrl":"partials/slide3.html",
 			"controller":"SlideController"
 		},
 
 		{
 			"path":"/dependency_injection",
-			"templateUrl":"/partials/slide4.html",
+			"templateUrl":"partials/slide4.html",
 			"controller":"SlideController"
 		},
 
 		{
 			"path":"/controller_inheritance",
-			"templateUrl":"/partials/slide5.html",
+			"templateUrl":"partials/slide5.html",
 			"controller":"SlideController"
 		},
 
 		{
 			"path":"/scope_uncluttered",
-			"templateUrl":"/partials/slide6.html",
+			"templateUrl":"partials/slide6.html",
 			"controller":"SlideController"
 		},
 
 		{
 			"path":"/directive_needed",
-			"templateUrl":"/partials/slide7.html",
+			"templateUrl":"partials/slide7.html",
 			"controller":"SlideController"
 		},
 
 		{
 			"path":"/business_logic_means_model",
-			"templateUrl":"/partials/slide8.html",
+			"templateUrl":"partials/slide8.html",
 			"controller":"SlideController"
 		},
 
 		{
 			"path":"/sharing_with_providers",
-			"templateUrl":"/partials/slide9.html",
+			"templateUrl":"partials/slide9.html",
 			"controller":"SlideController"
 		},
 
 		{
 			"path":"/services_is_key",
-			"templateUrl":"/partials/slide10.html",
+			"templateUrl":"partials/slide10.html",
 			"controller":"SlideController"
 		},
 
 		{
 			"path":"/using_services",
-			"templateUrl":"/partials/slide11.html",
+			"templateUrl":"partials/slide11.html",
 			"controller":"SlideController"
 		},
 
 		{
 			"path":"/use_interceptor",
-			"templateUrl":"/partials/slide12.html",
+			"templateUrl":"partials/slide12.html",
 			"controller":"SlideController"
 		},
 
 		{
 			"path":"/configure_httpprovider",
-			"templateUrl":"/partials/slide13.html",
+			"templateUrl":"partials/slide13.html",
 			"controller":"SlideController"
 		},
 
 		{
 			"path":"/scope_problem",
-			"templateUrl":"/partials/slide14.html",
+			"templateUrl":"partials/slide14.html",
 			"controller":"SlideController"
 		},
 
 		{
 			"path":"/how_to_use_notifications",
-			"templateUrl":"/partials/slide16.html",
+			"templateUrl":"partials/slide16.html",
 			"controller":"SlideController"
 		},
 
 		{
 			"path":"/thanks",
-			"templateUrl":"/partials/slide17.html",
+			"templateUrl":"partials/slide17.html",
 			"controller":"SlideController"
 		}
 	]
