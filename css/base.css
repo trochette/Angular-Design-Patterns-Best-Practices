@@ -41,7 +41,8 @@ h3{
 }
 
 a,a:hover{
-	color:#333;
+	color:#3d82c6;
+	text-decoration: underline;
 }
 
 .section{
@@ -106,6 +107,13 @@ pre code{
             perspective-origin: 50% 50%;
 }
 
+.no-margin{
+	margin:0px!important;
+}
+
+/***************************************************
+	Transitions styles 
+***************************************************/
 
 .slide{
 	display: block;
@@ -199,125 +207,169 @@ body:hover .navigation{
 }
 
 /***************************************************
-	Slide 1
+	Intro Slide
 ***************************************************/
-.note1 img{
+.intro img{
 	margin:150px 0px 60px;
 }
-.note1 div{
+.intro div{
 	margin-top:10px;
 	opacity: .5;
 }
 
 
-.note1 .icon-github-sign{
+.intro .icon-github-sign{
 	width:25px;
 	height:25px;
 	background:url(../img/github.png) no-repeat;
 }
 
-.note1 .btn-large{
+.intro .btn-large{
 	margin-top: 200px;
 	font-size: 20px;
 }
 
 /***************************************************
-	Slide 2
+	About Slide
 ***************************************************/
-.note2 h1{
-	margin-top: 270px;
+.about img{
+	width:300px;
+	float:left;
 }
 
-.note2 h2{
-	margin-top: 70px;
+.about h2{
+	font-size: 30px;
+	line-height: 30px;
 }
 
-/***************************************************
-	Slide 3 || Slide 4
-***************************************************/
-.note3 h1{
-	margin-top: 270px;
+.about h4{
+	margin-top:50px;
+	font-weight:500;
+	font-size: 15px;
 }
 
-.note3 h2{
-	position: absolute;
+
+.about strong{
+	font-weight:600;
+	font-size: 80%;
+}
+
+.about .info{
+	float:left;
+	margin:90px 0px 0px 40px;
+}
+
+.about .info-wrapper{
+	position:absolute;
 	left:50%;
-	margin: 10px 0px 0px -130px;
-	text-align: right;
+	width:924px;
+	margin: 150px 0px 0px -400px;
+	position: relative;
+	text-align:left;
 }
 
 /***************************************************
-	Slide 5
+	Image Slide
 ***************************************************/
-.note5 h1{
+.image-slide{
+	text-align:left;
+}
+
+.image-slide h1{
 	margin:50px 0px 20px 70px;
-	margin-top: 50px;
 	text-align: left;
 }
 
-.note5 h2{
+.image-slide .section{
+	margin-top:70px;
+	width: 100%;
+}
+
+.image-slide .caption{
+	box-sizing:border-box;
+	font-size: 15px;
+	text-align: left;
+	float: left;
+	padding:20px 100px 0px 70px;
+	width: 100%;
+}
+
+.image-slide img{
+	width:80% ;
+	text-align: left;
+	margin-left:70px;
+	max-width:950px;
+}
+
+.image-slide h2{
 	margin-top: 10px;
 	margin-right:200px;
 	text-align: right;
 }
 
-/***************************************************
-	Slide 7
-***************************************************/
-.note7 h1{
-	margin-top: 270px;
+.image-slide .credits{
+	padding:0px 100px 0px 70px;
+	margin:20px 0 0 0;
 }
 
-.note7 h2{
-	margin-top: 30px;
-}
-/***************************************************
-	Slide 8
-***************************************************/
-.note8 h1{
-	margin-top: 270px;
-}
-
-.note8 h2{
-	position: absolute;
-	left:50%;
-	width: 100%;
-	margin: 10px 0px 0px -310px;
-	text-align: left;
-}
-
-/***************************************************
-	Slide 10
-***************************************************/
-.note10 h1{
-	margin-top: 270px;
-}
-
-.note10 h2{
-	margin-top:50px;
+.image-slide.centered{
 	text-align: center;
 }
 
+.image-slide.centered img{
+	margin:100px 0px 0px;
+}
+
 /***************************************************
-	Slide 17
+	Centered title slides
 ***************************************************/
-.note17 h1{
-	margin-top: 170px;
+.centered-title-slide h1{
+	margin-top: 270px;
 }
 
-.note17 h2{
-	margin-top: 70px;
+.centered-title-slide h2{
+	position: absolute;
+	left:50%;
+	margin: 10px 0px 0px -400px;
+	width:870px;
 }
 
-.note17 h3{
-	margin-top: 15px;
-	font-size: 15px;
-	font-weight: 300;
+.centered-title-slide h3{
+	margin-top:80px;
+	clear:both;
+	float:none;
 	color:#333;
 }
 
-.note17 img{
-	margin-top: 100px;
+.centered-title-slide img{
+	margin-top: 200px;
 }
 
+.centered-title-slide.thanks h1{
+	margin-top: 200px!important;
+}
 
+/***************************************************
+	Ccode highlighting slides
+***************************************************/
+.code_highlight_slide h1{
+	margin:50px 0px 20px 70px;
+	margin-top: 50px;
+	text-align: left;
+
+}
+
+.code_highlight_slide h2{
+	margin-top: 10px;
+	margin-right:200px;
+	text-align: right;
+}
+
+.code_highlight_slide .section{
+	width: 100%;
+}
+
+.code_highlight_slide .credits{
+	margin-top: -30px;
+	padding:0px 100px 0px 0px;
+}

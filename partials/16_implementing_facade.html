@@ -1,0 +1,61 @@
+<div class="slide code_highlight_slide">
+	<span class="section">Tip #4 : Create facade to interact with servers</span>
+	<h1>Implementing facade for data fetching</h1>
+	<pre class="highlightjs">
+		<code>
+		//This one is not implemented in this slideshow.
+		//However a basic example is done in NoteService.js
+		var SlideService = Class.extend({
+
+			SERVICE_URL:'&lt;server_url&gt;/rest/slides',
+
+			get:function(){
+				return this.$http.get(this.LOAD_SLIDES_URL).
+							error(this.errorCallback.bind(this));
+			},
+
+			post:function(data){
+				return this.$http.post(this.LOAD_SLIDES_URL,data).
+							error(this.errorCallback.bind(this);
+			},
+
+			put:function(data){
+				return this.$http.put(this.LOAD_SLIDES_URL,data).
+							error(this.errorCallback.bind(this);
+			},
+
+			[...]
+
+			errorCallback: function(response){
+				//Gracefully handle service error here.
+			}
+		}
+		});
+
+
+
+
+
+		var SlideServiceProvider = Class.extend({
+
+			instance: new SlideService(),
+
+			$get:['$http',function($http){
+				this.instance.$http = $http;
+				return this.instance;
+			}]
+		})
+
+		angular.module('SlideService',[])
+			.provider('SlideService',SlideServiceProvider);
+	
+
+
+
+
+
+
+</code>
+	</pre>
+	<span class="credits">This can be injected in any model that needs to interact with slides RESTful Api</span>
+</div>
