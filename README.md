@@ -26,3 +26,7 @@ Source code and examples from the talk given at [MagmaConf 2013](www.magmaconf.c
 -- How to use Notifications
 - Tip #7: Automate your workflow
 -- Tools
+
+
+# Thanks
+Thanks to @cliffmeyers, @jhooks, @ryancanulla, @plbabin, @connatser, Dustin Butler, Ben Clickenbeard, Wes Jones, Nate Lokers and Robert Taylor all these patterns and best practices comes from team effort
