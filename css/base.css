@@ -320,6 +320,22 @@ body:hover .navigation{
 	margin:100px 0px 0px;
 }
 
+.image-slide.centered .caption{
+	width:30%;
+	float:left;
+	margin: 0 0 0 30px;
+	padding:0px;
+}
+
+.image-slide.centered .caption-wrapper{
+	position:absolute;
+	left:50%;
+	width:100%;
+	max-width: 900px;
+	overflow: auto;
+	margin-left: -450px;
+}
+
 /***************************************************
 	Centered title slides
 ***************************************************/
