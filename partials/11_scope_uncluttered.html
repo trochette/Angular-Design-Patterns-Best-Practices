@@ -1,0 +1,31 @@
+<div class="slide code_highlight_slide">
+	<span class="section">Tip #2: Keep controllers simple</span>
+	<h1>Keep your scope uncluttered</h1>
+	<pre class="highlightjs">
+		<code>
+		[...]
+
+		defineListeners:function(){
+		   /**
+			* Destroy function don't need to be called from template, 
+			* thus no need to make it publicly available via scope.
+			*/
+			this.$scope.$on('$destroy',this.destroy.bind(this));
+		},
+
+		[...]
+
+		defineScope:function(){
+		   /**
+			* Title needs to be bind and displayed by the view.
+			* In that case we need to make it publicly available via scope.
+			*/
+			this.$scope.title = "I love OpenCode.ca"
+		},
+
+		[...]
+
+		</code>
+	</pre>
+	<span class="credits">Angular dirty check each properties when it thinks some values changed. Every <strong>$digest</strong> or <strong>$apply</strong> will trigger this check. Carefully selecting what is available on <strong>$scope</strong> and minimizing logic view bound functions is the key to build snappy applications.</span>
+</div>
