@@ -4,96 +4,140 @@
 	"slides":[
 		{
 			"path":"/intro",
-			"templateUrl":"partials/slide1.html",
+			"templateUrl":"partials/01_intro.html",
 			"controller":"SlideController"
 		},
+	
 		{
-			"path":"/are_they_tested",
-			"templateUrl":"partials/slide2.html",
+			"path":"/proven",
+			"templateUrl":"partials/03_proven.html",
+			"controller":"SlideController"
+		},
+
+		{
+			"path":"/code_organization",
+			"templateUrl":"partials/04_code_organization.html",
+			"controller":"SlideController"
+		},
+
+		{
+			"path":"/piles_on_floor",
+			"templateUrl":"partials/05_piles_on_floor.html",
+			"controller":"SlideController"
+		},
+
+		{
+			"path":"/socks_drawer",
+			"templateUrl":"partials/06_socks_drawer.html",
+			"controller":"SlideController"
+		},
+
+		{
+			"path":"/modularity",
+			"templateUrl":"partials/07_modularity.html",
 			"controller":"SlideController"
 		},
 
 		{
 			"path":"/keep_controllers_simple",
-			"templateUrl":"partials/slide3.html",
+			"templateUrl":"partials/08_keep_controllers_simple.html",
+			"controller":"SlideController"
+		},
+
+
+		{
+			"path":"/class_approach",
+			"templateUrl":"partials/09_class_approach.html",
 			"controller":"SlideController"
 		},
 
 		{
-			"path":"/dependency_injection",
-			"templateUrl":"partials/slide4.html",
-			"controller":"SlideController"
-		},
-
-		{
-			"path":"/controller_inheritance",
-			"templateUrl":"partials/slide5.html",
+			"path":"/inheritance_pattern",
+			"templateUrl":"partials/10_inheritance_pattern.html",
 			"controller":"SlideController"
 		},
 
 		{
 			"path":"/scope_uncluttered",
-			"templateUrl":"partials/slide6.html",
+			"templateUrl":"partials/11_scope_uncluttered.html",
 			"controller":"SlideController"
 		},
 
 		{
 			"path":"/directive_needed",
-			"templateUrl":"partials/slide7.html",
+			"templateUrl":"partials/12_directive_needed.html",
 			"controller":"SlideController"
 		},
 
 		{
-			"path":"/business_logic_means_model",
-			"templateUrl":"partials/slide8.html",
+			"path":"/business_logic",
+			"templateUrl":"partials/13_business_logic.html",
 			"controller":"SlideController"
 		},
 
 		{
 			"path":"/sharing_with_providers",
-			"templateUrl":"partials/slide9.html",
+			"templateUrl":"partials/14_sharing_with_providers.html",
 			"controller":"SlideController"
 		},
 
 		{
-			"path":"/services_is_key",
-			"templateUrl":"partials/slide10.html",
+			"path":"/facade",
+			"templateUrl":"partials/15_facade.html",
 			"controller":"SlideController"
 		},
 
 		{
-			"path":"/using_services",
-			"templateUrl":"partials/slide11.html",
+			"path":"/implementing_facade",
+			"templateUrl":"partials/16_implementing_facade.html",
 			"controller":"SlideController"
 		},
 
 		{
-			"path":"/use_interceptor",
-			"templateUrl":"partials/slide12.html",
+			"path":"/provider_configuration",
+			"templateUrl":"partials/17_provider_configuration.html",
 			"controller":"SlideController"
 		},
 
 		{
-			"path":"/configure_httpprovider",
-			"templateUrl":"partials/slide13.html",
+			"path":"/configuring_httpproviders",
+			"templateUrl":"partials/18_configuring_httpproviders.html",
 			"controller":"SlideController"
 		},
 
 		{
 			"path":"/scope_problem",
-			"templateUrl":"partials/slide14.html",
+			"templateUrl":"partials/19_scope_problem.html",
+			"controller":"SlideController"
+		},
+
+		{
+			"path":"/notifications",
+			"templateUrl":"partials/20_notifications.html",
 			"controller":"SlideController"
 		},
 
 		{
 			"path":"/how_to_use_notifications",
-			"templateUrl":"partials/slide16.html",
+			"templateUrl":"partials/21_how_to_use_notifications.html",
+			"controller":"SlideController"
+		},
+
+		{
+			"path":"/workflow_automation",
+			"templateUrl":"partials/22_workflow_automation.html",
+			"controller":"SlideController"
+		},
+
+		{
+			"path":"/tools",
+			"templateUrl":"partials/23_tools.html",
 			"controller":"SlideController"
 		},
 
 		{
 			"path":"/thanks",
-			"templateUrl":"partials/slide17.html",
+			"templateUrl":"partials/24_thanks.html",
 			"controller":"SlideController"
 		}
 	]

@@ -1,0 +1,44 @@
+<div class="slide code_highlight_slide">
+	<span class="section">Tip #5: Leverage provider configuration</span>
+	<h1>Configuring $httpProvider to intercept all requests</h1>
+	<pre class="highlightjs">
+		<code>
+	angular.module('notes',[])
+		.config(["$httpProvider",
+			function ($httpProvider) {
+
+				var httpStatusCodeInterceptorFactory = function ($q) {
+
+
+					function onSuccess(response){
+						if("success_condition"){
+							return response.data;
+						}else{
+							//Show your global error dialog
+							$q.reject(response.data);//Very important to reject the error
+						}
+					};
+
+
+					function onError(response){
+						//Show your global error dialog
+						$q.reject(response);//Very important to reject the error
+					};
+
+
+
+					return function (promise) {
+						return promise.then(onSuccess,onError);
+					};
+				};
+
+				//Activate your interceptor
+				$httpProvider.responseInterceptors.push(httpStatusCodeInterceptorFactory);
+      		}])
+
+
+
+
+		</code>
+	</pre>
+</div>
