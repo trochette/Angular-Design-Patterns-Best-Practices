@@ -229,6 +229,10 @@ body:hover .navigation{
 	font-size: 20px;
 }
 
+.intro a{
+	text-decoration: none;
+}
+
 /***************************************************
 	About Slide
 ***************************************************/
