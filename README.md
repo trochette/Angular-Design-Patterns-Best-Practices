@@ -1,6 +1,6 @@
 # Angular.js: Advanced Design Patterns and Best Practices
 
-Source code and examples from the talks given at [MagmaConf 2013](www.magmaconf.com) and [OpenCode](www.opencode.ca). 
+Source code and examples from the talks given at [MagmaConf 2013](http://www.magmaconf.com) and [OpenCode](http://www.opencode.ca). 
 
 ## Content
 
