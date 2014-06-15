@@ -36,10 +36,10 @@ var NotesController = BaseController.extend({
 	_notesModel:null,
 	
 	init:function($scope,NotesModel,Notifications,$route){
-		this._super($scope)
 		this._notifications = Notifications;
 		this._notesModel = NotesModel;
 		this._notesModel.loadSlides();
+		this._super($scope);
 	},
 
 	defineListeners:function(){
