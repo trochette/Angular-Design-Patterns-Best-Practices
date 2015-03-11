@@ -50,7 +50,7 @@ var NavigationDirective = BaseController.extend({
 
 
 	/**
-     * Triggered when the user click on the backward
+     * Triggered when the user clicks on the backward
      * button or when KeyboardEvent.LEFT_ARROW is fired
      */ 
 	previousPage:function(){
@@ -88,7 +88,7 @@ var NavigationDirective = BaseController.extend({
 /**
  * Set Angular directive base on the class above,
  * this gives us a lot more flexibility and permits
- * inheritance over Directives this this is not recommanded,
+ * inheritance over Directives this is not recommended,
  * with directive composition is better.
  *
  * @author tommy.rochette[followed by the usual sign]universalmind.com
