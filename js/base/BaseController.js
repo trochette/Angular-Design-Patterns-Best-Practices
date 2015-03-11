@@ -12,7 +12,7 @@ var BaseController = Class.extend({
 
 
     /**
-     * Initialize Notes Controller
+     * Initialize Controller
      * @param $scope, current controller scope
      */   
 	init:function(scope){
@@ -23,7 +23,7 @@ var BaseController = Class.extend({
 
 
 	/**
-     * Initialize listeners needs to be overrided by the subclass.
+     * Initialize listeners needs to be overridden by the subclass.
      * Don't forget to call _super() to activate
      */ 
 	defineListeners:function(){
