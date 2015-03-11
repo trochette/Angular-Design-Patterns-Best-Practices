@@ -40,7 +40,7 @@ var EventDispatcher = Class.extend({
 
 
     /**
-    * Dispatch an event to all registered listener
+    * Dispatch an event to all registered listeners
     * @param Mutiple params available, first must be string
     */ 
     dispatchEvent:function(){
