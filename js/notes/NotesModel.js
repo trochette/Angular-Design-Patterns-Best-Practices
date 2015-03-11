@@ -34,7 +34,7 @@ var NotesModel = EventDispatcher.extend({
 
 
 	/**
-     * Change current slide to previous one
+     * Change current slide to next one
      */ 
 	nextSlide:function(){
 		if(this._currentSlide<this._slides.length-1){
@@ -68,7 +68,7 @@ var NotesModel = EventDispatcher.extend({
 
 
 	/**
-     * Triggered when the user press a key
+     * Triggered when the user presses a key
      * watch for left and right arrow keycoode
      * @param {object} result object returned from the server
      */ 
@@ -79,7 +79,7 @@ var NotesModel = EventDispatcher.extend({
 
 
 	/**
-     * Triggered when the user press a key
+     * Triggered when the user presses a key
      * watch for left and right arrow keycoode
      * @param {error} 
      */ 
