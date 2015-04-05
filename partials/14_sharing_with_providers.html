@@ -34,7 +34,7 @@
 		init:function($scope,NotesModel,Notifications,$route){
 			this._super($scope)
 			this._notifications = Notifications;
-			
+
 			//NotesModel is now available to for usage.
 			this._notesModel = NotesModel;
 			this._notesModel.loadSlides();
@@ -50,5 +50,5 @@
 
 </code>
 	</pre>
-	<span class="credits">It's also possible to write providers that returns a new instance of the model each time instead of sharing it.</span>
-</div> 
+	<span class="credits">It's also possible to write providers that returns a new instance of the model each time, instead of sharing it.</span>
+</div>

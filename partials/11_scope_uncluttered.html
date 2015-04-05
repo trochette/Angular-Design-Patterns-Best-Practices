@@ -7,7 +7,7 @@
 
 		defineListeners:function(){
 		   /**
-			* Destroy function doesn't need to be called from template, 
+			* Destroy function doesn't need to be called from template,
 			* thus no need to make it publicly available via scope.
 			*/
 			this.$scope.$on('$destroy',this.destroy.bind(this));
@@ -27,5 +27,5 @@
 
 		</code>
 	</pre>
-	<span class="credits">Angular dirty check each properties when it thinks some values changed. Every <strong>$digest</strong> or <strong>$apply</strong> will trigger this check. Carefully selecting what is available on <strong>$scope</strong> and minimizing logic view bound functions is the key to build snappy applications.</span>
-</div> 
+	<span class="credits">Angular dirty-checks each property when it thinks some values have changed. Every <strong>$digest</strong> or <strong>$apply</strong> will trigger this check. Carefully selecting what is available on <strong>$scope</strong> and minimizing logic view bound functions is the key to building snappy applications.</span>
+</div>
